@@ -17,8 +17,8 @@ build:
 requirements:
   host:
     - python >=3.8,<4.0
+    - flit-core >=3.2,<4
     - pip
-    - poetry-core >=1.0.0
   run:
     - python >=3.8,<4.0
     - microsoft-kiota-abstractions >=1.0.0,<2.0.0
