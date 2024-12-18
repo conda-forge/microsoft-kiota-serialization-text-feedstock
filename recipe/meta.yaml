@@ -20,7 +20,7 @@ requirements:
     - pip
     - poetry-core >=1.0.0
   run:
-    - python >={{ python_min }}
+    - python >={{ python_min }},<4.0
     - microsoft-kiota-abstractions
     - python-dateutil 2.9.0.post0
 
