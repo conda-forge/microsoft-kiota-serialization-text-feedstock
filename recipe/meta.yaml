@@ -1,5 +1,5 @@
 {% set name = "microsoft-kiota-serialization-text" %}
-{% set version = "1.6.6" %}
+{% set version = "1.6.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/microsoft_kiota_serialization_text-{{ version }}.tar.gz
-  sha256: 64bc3e98c127c3a8a437a777976318177ff303338b657c20546d5369a8faf79f
+  sha256: 0913ad9e9b43505a9fd4f83df052398828fb8168bf7a885743c4af30b5c0bb72
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
     - pip
     - poetry-core >=1.0.0
   run:
-    - python >={{ python_min }}
+    - python >={{ python_min }},<4.0
     - microsoft-kiota-abstractions
     - python-dateutil 2.9.0.post0
 
