@@ -22,7 +22,6 @@ requirements:
   run:
     - python >={{ python_min }},<4.0
     - microsoft-kiota-abstractions
-    - python-dateutil 2.9.0.post0
 
 test:
   imports:
