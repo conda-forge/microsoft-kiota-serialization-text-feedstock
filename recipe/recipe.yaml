@@ -19,10 +19,9 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - poetry-core >=1.0.0
+    - flit-core >=3.2,<5
   run:
     - python >=${{ python_min }},<4.0
-    - microsoft-kiota-abstractions ${{ version }}.*
     - microsoft-kiota-abstractions >=1.11.1,<2.0.0
 tests:
   - python:
